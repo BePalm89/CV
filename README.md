@@ -28,6 +28,6 @@
 
 ### Mobile
 
-![image info](./public/design/CV_desktop.png)
-![image info](./public/design/CV_desktop.png)
+![image info](./public/design/CV_Mobile.png)
+![image info](./public/design/CV_Mobile_menu.png)
 
