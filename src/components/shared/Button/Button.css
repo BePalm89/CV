@@ -1,0 +1,31 @@
+.btn {
+    padding: var(--padding-xs) var(--padding-s);
+    font-family: inherit;
+    border: none;
+    border-radius: var(--border-radius-s);
+    font-size: var(--font-size-s);
+    cursor: pointer;
+}
+
+
+.primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.outline {
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.primary:hover {
+    box-shadow: 0 0 0 1px var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.outline:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}

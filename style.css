@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+
+:root {
+  --primary-color: #FF4F6C;
+  --primary-light-color: #F8A4B3;
+  --secondary-color: #3B3972;
+  --secondary-light-color: #373A6C;
+  --text-color: #708BA4;
+  --gray-color: #D8D7E3;
+  --bgn-color: #EBF4F9;
+  --white-color: #FFFFFF;
+
+  --font-family: 'Rubik', sans-serif;
+
+  --font-size-xs: 12px;
+  --font-size-s: 16px;
+  --font-size-m: 18px;
+  --font-size-l: 24px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 64px;
+
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  --spacing-xs: 0.5rem;
+  --spacing-s: 1rem;
+  --spacing-m: 2rem;
+  --spacing-l: 3rem;
+  --spacing-xl: 4rem;
+  --spacing-xxl: 6rem;
+  
+  --margin-xs : var(--spacing-xs);
+  --margin-s : var(--spacing-s);
+  --margin-m : var(--spacing-m);
+  --margin-l : var(--spacing-l);
+  --margin-xl : var(--spacing-xl);
+  
+  --padding-xs : var(--spacing-xs);
+  --padding-s : var(--spacing-s);
+  --padding-m : var(--spacing-m);
+  --padding-l : var(--spacing-l);
+  --padding-xl : var(--spacing-xl);
+  --padding-xxl : var(--spacing-xxl);
+  
+  --gap-xs : var(--spacing-xs);
+  --gap-s : var(--spacing-s);
+  --gap-m : var(--spacing-m);
+  --gap-l : var(--spacing-l);
+  --gap-xl : var(--spacing-xl);
+  
+  --border-radius-xs: 4px;
+  --border-radius-s: 8px;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fix-width {
+  max-width: 1344px;
+  margin: 0 auto;
+}
+
+.active {
+  color: var(--primary-color);
+}

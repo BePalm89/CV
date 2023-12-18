@@ -1,0 +1,14 @@
+#skills {
+    padding: var(--padding-l) var(--padding-l);
+}
+
+.skills-container {
+    display: flex;
+    gap: var(--gap-m)
+}
+
+@media (max-width: 834px) {
+    .skills-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,10 @@
+.language-skills-container {
+    flex: 0 0 50%;
+}
+
+.language-skill-wrapper {
+    padding-top: var(--padding-m);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-l);
+}

@@ -1,0 +1,66 @@
+.card-container {
+    flex: 0 0 500px;
+    display: flex;
+    gap: var(--gap-s);
+    background-color: var(--white-color);
+    padding: var(--padding-s) var(--padding-s);
+    border-radius: var(--border-radius-s);
+}
+
+.card-icon {
+    height: 40px;
+    width: 40px;
+    line-height: 0;
+    padding: var(--padding-xs);
+    border-radius: 100%;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-s);
+    
+}
+
+.date-primary {
+    color: var(--primary-color);
+}
+
+.date-secondary {
+    color: var(--secondary-color);
+}
+
+.role-primary {
+    color: var(--secondary-color);
+}
+
+.role-secondary {
+    color: var(--primary-color);
+}
+
+.card-info-detail > p {
+    font-size: var(--font-size-xs);
+    color: var(--text-color);
+}
+
+.description {
+    color: var(--text-color);
+    font-size: var(--font-size-s);
+    line-height: 20px;
+}
+
+.border-primary {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.border-secondary {
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.card-icon-primary {
+    background-color: var(--primary-color);
+}
+
+.card-icon-secondary {
+    background-color: var(--secondary-color);
+}

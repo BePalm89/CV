@@ -1,0 +1,16 @@
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: var(--padding-s);
+}
+
+footer ul {
+    display: flex;
+    gap: var(--gap-m);
+    justify-content: center;
+}
+
+footer p {
+    font-size: var(--font-size-xs);
+    color: var(--text-color);
+}

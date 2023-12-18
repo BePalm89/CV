@@ -1,0 +1,26 @@
+.arrows-container {
+    padding-top: var(--padding-m);
+    display: flex;
+    gap: var(--gap-s);
+    justify-content: center;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+#prev-arrow-primary {
+    fill: var(--primary-color);
+}
+
+#next-arrow-primary {
+    fill: var(--primary-color);
+}
+
+#prev-arrow-secondary {
+    fill: var(--secondary-color);
+}
+
+#next-arrow-secondary {
+    fill: var(--secondary-color);
+}

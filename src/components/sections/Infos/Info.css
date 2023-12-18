@@ -1,0 +1,20 @@
+#infos {
+    background-color: var(--secondary-color);
+    padding: var(--padding-m) var(--padding-l);
+}
+
+.infos-container ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--gap-l);
+    color: var(--primary-color);
+}
+
+.infos-container ul li {
+    text-align: center;
+}
+
+.infos-container ul li p {
+    font-size: var(--font-size-s);
+} 

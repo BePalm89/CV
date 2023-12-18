@@ -1,0 +1,7 @@
+.work-skills-container{
+    flex: 0 0 50%;
+}
+
+.work-skill-wrapper {
+    padding-top: var(--padding-m);
+}
