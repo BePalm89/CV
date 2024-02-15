@@ -1,7 +1,16 @@
 footer {
     background-color: var(--secondary-color);
-    text-align: center;
-    padding: var(--padding-s);
+    padding: var(--padding-s) var(--padding-l);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container img {
+    cursor: pointer;
 }
 
 footer ul {

@@ -9,7 +9,9 @@ import { Education } from './src/components/sections/Education/Education';
 import { Projects } from './src/components/sections/Projects/Projects';
 import { ContactMe } from './src/components/sections/ContactMe/ContactMe';
 import { Footer } from './src/components/sections/Footer/Footer';
-import { playTyping, handleDownload, handleViewPortfolio, handleChangeLinkState, createScrollHandler } from './utils';
+import { playTyping, handleDownload, handleViewPortfolio, handleChangeLinkState, createScrollHandler, handleFilterProject } from './utils';
+import { WrapperProjectCards } from './src/components/shared/WrapperProjectCards/WrapperProjectCards';
+import { DATA_CV } from './src/data/data';
 
 const divApp = document.querySelector('#app');
 const mainElement = document.createElement('main');
@@ -41,7 +43,6 @@ const buildApp = () => {
 }
 
 buildApp();
-
 // Typing animation
 const typingElement = document.querySelector('.typing');
 playTyping(typingElement);
@@ -57,8 +58,8 @@ viewPorfolioButton.addEventListener('click', handleViewPortfolio);
 const burgerMenuElement = document.querySelector("#menu");
 
 burgerMenuElement.addEventListener("click", () => {
-  const smallDeviceNav = document.querySelector("#small-device-nav");
-  smallDeviceNav.classList.toggle("open");
+    const smallDeviceNav = document.querySelector("#small-device-nav");
+    smallDeviceNav.classList.toggle("open");
 });
 
 // Change state (color) of link while scrolling into a particular section
@@ -69,19 +70,19 @@ window.addEventListener('scroll', () => handleChangeLinkState(linksElements, sec
 
 // Smooth scrolling for anchor links
 document.addEventListener('DOMContentLoaded', () => {
-
+    
     let links = document.querySelectorAll('a[href^="#"]');
     links.forEach(function(link) {
         link.addEventListener('click', function(event) {
             event.preventDefault();
-
+            
             const targetId = this.hash.substring(1);
             const target = document.getElementById(targetId);
-
+            
             if (target) {
                 const offset = document.querySelector('nav').offsetHeight;
                 const targetOffset = target.offsetTop - offset - 20;
-
+                
                 window.scrollTo({
                     top: targetOffset,
                     behavior: 'smooth'
@@ -104,3 +105,24 @@ nextButtonExperience.addEventListener('click', (event) => experienceScrollHandle
 prevButtonExperience.addEventListener('click', (event) => experienceScrollHandler(event, 'prev'));
 nextButtonEducation.addEventListener('click', (event) => educationScrollHandler(event, 'next'));
 prevButtonEducation.addEventListener('click', (event) => educationScrollHandler(event, 'prev'));
+
+// Scrolling to top from the footer
+const upArrowButton = document.querySelector('.footer-container #up-arrow');
+
+upArrowButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth'})
+});
+
+// Run logic for showing the projects 
+const projectContainer = document.querySelector('.projects-container');
+
+WrapperProjectCards(DATA_CV.projects, projectContainer);
+
+// Filter project by technology
+const filtersItems = document.querySelectorAll('#filters ul li');
+
+filtersItems[0].classList.add('active-filter');
+
+filtersItems.forEach(filter => {
+    filter.addEventListener('click', (event) => handleFilterProject(event, projectContainer, filter, filtersItems));
+});

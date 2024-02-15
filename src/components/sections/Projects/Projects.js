@@ -1,13 +1,14 @@
 import './Projects.css';
 import { Title } from '../../shared/Title/Title';
-import { WrapperProjectCards } from '../../shared/WrapperProjectCards/WrapperProjectCards';
+import { Filter } from '../../shared/Filters/Fitler';
 
 export const Projects = () => {
+
     return `
         <section id="projects">
             <div class="projects-container fix-width">
                 ${Title('Projects')}
-                ${WrapperProjectCards()}
+                ${Filter()}
             </div>
         </section>
     `

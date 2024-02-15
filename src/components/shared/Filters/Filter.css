@@ -1,0 +1,25 @@
+#filters {
+    margin-top: var(--margin-m);
+}
+
+#filters ul {
+    display: flex;
+    justify-content: center;
+    gap: var(--gap-l);
+}
+
+#filters ul li {
+    color: var(--secondary-color);
+    font-weight: var(--font-weight-semi-bold);
+    cursor: pointer;
+}
+
+#filters ul li:hover {
+    color: var(--primary-color);
+}
+
+#filters ul li.active-filter {
+    color: var(--primary-color);
+    text-underline-offset: 8px;
+    border-bottom: 1px solid var(--primary-color);
+}

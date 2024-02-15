@@ -2,3 +2,9 @@
     background-color: var(--bgn-color);
     padding: var(--padding-l) var(--padding-l);
 }
+
+@media (max-width: 500px) {
+    #education {
+        padding: var(--padding-l) var(--padding-xs);
+    } 
+}

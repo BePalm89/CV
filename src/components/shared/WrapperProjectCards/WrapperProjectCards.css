@@ -1,22 +1,7 @@
 .cards-project-wrapper {
     padding-top: var(--padding-l);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap-s);
-    grid-template-rows: repeat(6, 250px);
-}
-
-@media (max-width: 1024px) {
-    
-    .cards-project-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(9, 250px);
-    }
-}
-
-@media (max-width: 650px) {
-    .cards-project-wrapper {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(18, 250px);
-    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-m);
+    justify-content: space-between;
 }

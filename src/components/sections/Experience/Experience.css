@@ -3,3 +3,8 @@
     padding: var(--padding-l) var(--padding-l);
 }
 
+@media (max-width: 500px) {
+    #experience {
+        padding: var(--padding-l) var(--padding-xs);
+    } 
+}

@@ -1,15 +1,14 @@
-import './WrapperProjectCards.css';
-import { DATA_CV } from '../../../data/data';
-import { ProjectCard } from '../ProjectCard/ProjectCard';
+import "./WrapperProjectCards.css";
+import { ProjectCard } from "../ProjectCard/ProjectCard";
 
-export const WrapperProjectCards = () => {
-    const { projects } = DATA_CV;
+export const WrapperProjectCards = (projects, parentElement) => {
+    
+    const cardsProjectWrapper = document.createElement('div');
+    cardsProjectWrapper.classList.add('cards-project-wrapper');
 
-    return `
-        <div class="cards-project-wrapper">
-            ${projects.map((project) => {
-                return ProjectCard(project)
-            }).join('')}
-        </div>
-    `
-}
+    for (const project of projects) {
+        cardsProjectWrapper.innerHTML += ProjectCard(project);
+    }
+    
+    parentElement.appendChild(cardsProjectWrapper);
+};

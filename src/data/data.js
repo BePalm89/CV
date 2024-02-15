@@ -249,7 +249,7 @@ export const DATA_CV = {
       {
         id: 8,
         name: "Dictionary web app",
-        technology: "React & api",
+        technology: "react & api",
         githubLink: "https://github.com/BePalm89/dictionary-web-app",
         website: "",
         img: "https://res.cloudinary.com/dmrv2bogq/image/upload/v1701946100/Single%20page%20CV/dictionary_zxd5av.jpg",
