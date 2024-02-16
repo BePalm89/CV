@@ -12,7 +12,6 @@
 
 .hero-box-container h1 {
     color: var(--white-color);
-    font-size: var(--font-size-xxl);
     font-size: clamp(var(--font-size-xl), 4vw, var(--font-size-xxl));
 }
 
